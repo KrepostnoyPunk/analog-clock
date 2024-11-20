@@ -1,0 +1,46 @@
+.arrows{
+    position: absolute;
+    @include square(200px);
+    @include absolute-center;
+    
+
+    &__arrow {
+        position: absolute;
+        transform-origin: bottom center;
+        bottom: 50%;       
+        left: 50%; 
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    &--hour {
+        width: 6px;
+        height: 145px;
+        background-color: transparent;
+        border: 1px solid var(--light-color);
+        transform: rotate(90deg); 
+    }
+    
+    &--minute {
+        width: 4px;
+        height: 220px;
+        background-color: var(--accent-color);
+        transform: rotate(90deg);
+    }
+    
+    &--second {
+        width: 2px;
+        height: 190px;
+        background-color: var(--accent-color-secondary);
+        transform: rotate(90deg);
+    }
+
+    &--center-point {
+        @include square(14px);
+        background-color: var(--accent-color-secondary);
+        border: 2px solid var(--dark-color-secondary);
+        border-radius: var(--watch-border-radius);
+        top: calc(50% - 6px);
+        left: calc(50% - 6px);
+    }
+}

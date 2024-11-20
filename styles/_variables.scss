@@ -1,0 +1,15 @@
+:root{
+    // цвета
+    --color-bg: linear-gradient(160deg, rgba(40,48,72,1) 0%, var(--dark-color) 90%);
+    --dark-color: rgba(25,25,25,1);
+    --dark-color-secondary: #000;
+    --light-color: #ececec;
+    --accent-color: #93FF75;
+    --accent-color-secondary: rgb(255, 51, 0);
+
+    // радиус 
+    --watch-border-radius: 50%;
+
+    // шрифты
+    --font-main: monospace, sans-serif;
+}
